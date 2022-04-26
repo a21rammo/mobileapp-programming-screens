@@ -31,5 +31,6 @@ The method **onClickButton();** had intents, which the purpose of intent is to c
 I also implemented a small text in **activity_second.xml** showing that this is second activity page.
 
 
-![](FirstPage.png, SecondPage.png)
+![](FirstPage.png)
+![](SecondPage.png)
 
