@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onClickButton() {
-        Toast.makeText(this, "Secound button", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Second Activity", Toast.LENGTH_LONG).show();
         Log.d("SecoundActivity", "onClickButton: ");
         Intent intent = new Intent(MainActivity.this, SecoundActivity.class);
         startActivity(intent);
