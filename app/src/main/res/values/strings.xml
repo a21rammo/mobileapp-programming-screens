@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Screens</string>
+    <string name="this_is_second_activity">This is second activity</string>
 </resources>
