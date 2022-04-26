@@ -2,9 +2,12 @@ package com.example.screens;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button button;
@@ -24,7 +27,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onClickButton() {
-
+        Toast.makeText(this, "Secound button", Toast.LENGTH_LONG).show();
+        Log.d("SecoundActivity", "onClickButton: ");
+        Intent intent = new Intent(MainActivity.this, SecoundActivity.class);
+        startActivity(intent);
     }
 
 }
