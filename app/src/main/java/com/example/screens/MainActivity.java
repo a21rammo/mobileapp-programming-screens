@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "Second Activity", Toast.LENGTH_LONG).show();
         Log.d("SecoundActivity", "onClickButton: ");
         Intent intent = new Intent(MainActivity.this, SecoundActivity.class);
+        intent.putExtra("name", "Raman"); 
         startActivity(intent);
     }
 

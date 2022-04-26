@@ -24,12 +24,18 @@ The method **onClickButton();** had intents, which the purpose of intent is to c
         Toast.makeText(this, "Second Activity", Toast.LENGTH_LONG).show();
         Log.d("SecoundActivity", "onClickButton: ");
         Intent intent = new Intent(MainActivity.this, SecoundActivity.class);
+        intent.putExtra("name", "Raman"); 
         startActivity(intent);
     }
 
 ```
 I also implemented a small text in **activity_second.xml** showing that this is second activity page.
-
+I forgot to add extras in mainactivity also secondactivivity. I added 
+`intent.putExtra("name", "Raman"); `
+to **MainActivity**. Also i added `  Bundle extras = getIntent().getExtras();
+if(extras != null) {
+String name = extras.getString("name");
+}` to **SecondActivity**
 
 ![](FirstPage.png)
 ![](SecondPage.png)
