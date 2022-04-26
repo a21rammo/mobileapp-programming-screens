@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecoundActivity">
+    tools:context=".SecondActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="188dp"
         android:layout_height="26dp"
-        android:text="@string/this_is_second_activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -37,6 +37,18 @@ if(extras != null) {
 String name = extras.getString("name");
 }` to **SecondActivity**
 
+I occured into another problem with showing the data. I had to add TextView object also I had to implement findviewID in secondActivity
+I also had to setText to the string which is sended from mainactivity
+```
+    Bundle extras = getIntent().getExtras();
+    if(extras != null) {
+    String name = extras.getString("name");
+    textView = findViewById(R.id.textView);
+    textView.setText(name);
+    }
+    
+```
+
 ![](FirstPage.png)
-![](SecondPage.png)
+![](RamanPicture.png)
 
